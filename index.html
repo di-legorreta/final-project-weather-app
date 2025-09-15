@@ -9,6 +9,7 @@
          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
          rel="stylesheet"
       />
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
       <link rel="stylesheet" href="src/style.css" />
       <title>My weather app</title>
    </head>
@@ -31,9 +32,7 @@
          <main>
             <div class="weather-app-data">
                <div>
-                  <h1 class="weather-app-city" id="weather-app-city">
-                     Mexico City
-                  </h1>
+                  <h1 class="weather-app-city" id="weather-app-city"></h1>
                   <p class="weather-app-details">
                      Tuesday 15:00, scattered clouds
                      <br />
@@ -43,8 +42,13 @@
                </div>
 
                <div class="weather-app-temp-container">
-                  <div class="weather-app-icon">🌤</div>
-                  <div class="weather-app-temp-value">12</div>
+                  <div class="weather-app-icon" id="weather-app-icon">🌤</div>
+                  <div
+                     class="weather-app-temp-value"
+                     id="weather-app-temp-value"
+                  >
+                     12
+                  </div>
                   <div class="weather-app-temp-unit">°C</div>
                </div>
             </div>
