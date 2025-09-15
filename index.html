@@ -9,25 +9,35 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>My weather app</title>
   </head>
+
   <body>
+  
     <div class="weather-app">
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="search" />
+    
+        <header>
+      <form class="search-form">
+        <input type="search" placeholder="Enter a city..." required class="search-form-input"/>
+        <input type="submit" value="search" class="search-form-button"/>
       </form>
     </header>
 
     <main>
-      <div>
-        <h1>Mexico City</h1>
-        <p>
+     <div class="weather-app-data">
+        <div>
+        <h1 class="weather-app-city">Mexico City</h1>
+        <p class="weather-app-details">
           Tuesday 15:00, scattered clouds
           <br />
-          Humidity: 66%, Wind: 3.13km/h
+          Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
         </p>
       </div>
-      <div>🌤 12 C</div>
+
+      <div class="weather-app-temp-container">
+        <div class="weather-app-icon">🌤 </div>
+        <div class="weather-app-temp-value">12 </div>
+        <div class="weather-app-temp-unit">°C</div>
+    </div>
+</div>
     </main>
   </body>
   <footer>
