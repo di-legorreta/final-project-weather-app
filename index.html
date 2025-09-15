@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/style.css" />
-    <title>My weather app</title>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="src/style.css" />
+      <title>My weather app</title>
+   </head>
 
-  <body>
-  
-    <div class="weather-app">
-    
-        <header>
-      <form class="search-form" id="search-form">
-        <input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-form-input"/>
-        <input type="submit" value="search" class="search-form-button"/>
-      </form>
-    </header>
+   <body>
+      <div class="weather-app">
+         <header>
+            <form class="search-form" id="search-form">
+               <input
+                  type="search"
+                  placeholder="Enter a city..."
+                  required
+                  class="search-form-input"
+                  id="search-form-input"
+               />
+               <input type="submit" value="search" class="search-form-button" />
+            </form>
+         </header>
 
-    <main>
-     <div class="weather-app-data">
-        <div>
-        <h1 class="weather-app-city" id="weather-app-city">Mexico City</h1>
-        <p class="weather-app-details">
-          Tuesday 15:00, scattered clouds
-          <br />
-          Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
-        </p>
+         <main>
+            <div class="weather-app-data">
+               <div>
+                  <h1 class="weather-app-city" id="weather-app-city">
+                     Mexico City
+                  </h1>
+                  <p class="weather-app-details">
+                     Tuesday 15:00, scattered clouds
+                     <br />
+                     Humidity: <strong>66%</strong>, Wind:
+                     <strong>3.13km/h</strong>
+                  </p>
+               </div>
+
+               <div class="weather-app-temp-container">
+                  <div class="weather-app-icon">🌤</div>
+                  <div class="weather-app-temp-value">12</div>
+                  <div class="weather-app-temp-unit">°C</div>
+               </div>
+            </div>
+         </main>
+
+         <footer>
+            Coded by
+            <a href="https://github.com/di-legorreta" target="_blank"
+               >Diana Legorreta</a
+            >
+            free sourced on
+            <a
+               href="https://github.com/di-legorreta/final-project-weather-app"
+               target="_blank"
+               >GitHub</a
+            >and hosted on
+            <a href="https://challenge2-weather-app.netlify.app/">Netlify</a>
+         </footer>
       </div>
-
-      <div class="weather-app-temp-container">
-        <div class="weather-app-icon">🌤 </div>
-        <div class="weather-app-temp-value">12 </div>
-        <div class="weather-app-temp-unit">°C</div>
-    </div>
-</div>
-    </main>
-  </body>
-  <footer>
-    Coded by
-    <a href="https://github.com/di-legorreta" target="_blank"
-      >Diana Legorreta</a>
-    free sourced on
-    <a
-      href="https://github.com/di-legorreta/final-project-weather-app"
-      target="_blank"
-      >GitHub</a
-    >and hosted on
-    <a href="https://challenge2-weather-app.netlify.app/">Netlify</a>
-  </footer>
-  </div>
-  <script src="src/index.js"></script>
+      <script src="src/index.js"></script>
+   </body>
 </html>
