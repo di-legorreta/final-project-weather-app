@@ -1,7 +1,7 @@
 // @ts-check
 
 function refreshWeather(response) {
-   let temperatureElement = document.querySelector("#weather-app-temperature");
+   let temperatureElement = document.querySelector("#weather-app-temp-value");
    let temperature = response.data.temperature.current;
    let cityElement = document.querySelector("#weather-app-city");
 
@@ -25,4 +25,4 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Mexico");
+searchCity("Vienna");
