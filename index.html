@@ -15,8 +15,8 @@
     <div class="weather-app">
     
         <header>
-      <form class="search-form">
-        <input type="search" placeholder="Enter a city..." required class="search-form-input"/>
+      <form class="search-form" id="search-form">
+        <input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-form-input"/>
         <input type="submit" value="search" class="search-form-button"/>
       </form>
     </header>
@@ -24,7 +24,7 @@
     <main>
      <div class="weather-app-data">
         <div>
-        <h1 class="weather-app-city">Mexico City</h1>
+        <h1 class="weather-app-city" id="weather-app-city">Mexico City</h1>
         <p class="weather-app-details">
           Tuesday 15:00, scattered clouds
           <br />
@@ -54,4 +54,5 @@
     <a href="https://challenge2-weather-app.netlify.app/">Netlify</a>
   </footer>
   </div>
+  <script src="src/index.js"></script>
 </html>
